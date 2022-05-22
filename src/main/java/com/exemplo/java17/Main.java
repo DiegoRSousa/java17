@@ -31,20 +31,20 @@ public class Main {
     }
 
     public static double calculateArea(GeometricFigure figure) {
-        if(figure instanceof Circle circle)
-            return circle.getRaio() * circle.getRaio() * Math.PI;
-        if(figure instanceof Square square)
-            return square.getSide() * square.getSide();
-        if(figure instanceof Rectangle rectangle)
-            return rectangle.getHeight() * rectangle.getSide();
-        return 0;
+//        if(figure instanceof Circle circle)
+//            return circle.getRaio() * circle.getRaio() * Math.PI;
+//        if(figure instanceof Square square)
+//            return square.getSide() * square.getSide();
+//        if(figure instanceof Rectangle rectangle)
+//            return rectangle.getHeight() * rectangle.getSide();
+//        return 0;
 
-//        return switch (figure) {
-//            case Circle circle -> circle.getRaio() * circle.getRaio() * Math.PI;
-//            case Square square -> square.getSide() * square.getSide();
-//            case Rectangle rectangle -> rectangle.getHeight() * rectangle.getSide();
-//            default -> 0;
-//        };
+        return switch (figure) {
+            case Circle circle -> circle.getRaio() * circle.getRaio() * Math.PI;
+            case Square square -> square.getSide() * square.getSide();
+            case Rectangle rectangle -> rectangle.getHeight() * rectangle.getSide();
+            default -> 0;
+        };
 
     }
 
